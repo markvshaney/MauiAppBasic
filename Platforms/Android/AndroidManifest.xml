@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="MauiAppBasicPackageName.MauiAppBasicPackageName" android:versionCode="1" android:versionName="1">
+	<application android:allowBackup="true" android:supportsRtl="true" android:label="MauiAppBasicAppName"></application>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.CALL_PHONE" />
+
+	<receiver android:name="MauiAppBasic.platforms.android.PhoneCallReceiver" android:enabled="true" android:exported="true">
+		<intent-filter>
+			<action android:name="android.intent.action.PHONE_STATE" />
+		</intent-filter>
+	</receiver>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+</manifest>
