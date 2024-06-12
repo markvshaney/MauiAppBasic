@@ -1,0 +1,2 @@
+# MauiAppBasic
+main
